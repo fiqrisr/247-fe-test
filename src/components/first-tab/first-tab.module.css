@@ -1,0 +1,5 @@
+.panel {
+  padding: var(--mantine-spacing-md);
+  border: 1px var(--mantine-color-default-border) solid;
+  border-radius: var(--mantine-radius-md);
+}

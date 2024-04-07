@@ -1,4 +1,4 @@
-import { AppShell, Center, Text } from "@mantine/core";
+import { AppShell, Center, Container, Text } from "@mantine/core";
 
 export const MainLayout = ({ children }: React.PropsWithChildren) => {
   return (
@@ -10,7 +10,9 @@ export const MainLayout = ({ children }: React.PropsWithChildren) => {
           </Text>
         </Center>
       </AppShell.Header>
-      <AppShell.Main>{children}</AppShell.Main>
+      <AppShell.Main>
+        <Container size="lg">{children}</Container>
+      </AppShell.Main>
       <AppShell.Footer>
         <Center h="100%">Senin, 8 April 2024</Center>
       </AppShell.Footer>
