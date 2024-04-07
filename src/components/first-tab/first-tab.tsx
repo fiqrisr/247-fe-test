@@ -2,6 +2,7 @@ import { useState, useCallback } from "react";
 import { Box, Button, Flex, Grid, Textarea } from "@mantine/core";
 
 import { WordStatItem } from "@/types";
+import { sortWords } from "@/utils";
 
 import { WordsTable } from "../words-table";
 
@@ -28,7 +29,7 @@ export const FirstTab = () => {
       count: wordCountMap[w],
     }));
 
-    setWords(uniqueWords);
+    setWords(sortWords(uniqueWords));
   }, [text]);
 
   const onWordDelete = (word: string) => {
