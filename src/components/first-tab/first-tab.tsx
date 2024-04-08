@@ -59,7 +59,14 @@ export const FirstTab = () => {
         </Box>
       </Grid.Col>
       <Grid.Col span={6}>
-        <Box className={classes.panel}>
+        <Box
+          className={classes.panel}
+          mah="70vh"
+          style={{
+            overflowY: "auto",
+            overflowX: "hidden",
+          }}
+        >
           <WordsTable data={words ?? []} onDelete={onWordDelete} />
         </Box>
       </Grid.Col>

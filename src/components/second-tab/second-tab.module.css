@@ -1,0 +1,23 @@
+.panel {
+  padding: var(--mantine-spacing-md);
+  border: 1px var(--mantine-color-default-border) solid;
+  border-radius: var(--mantine-radius-md);
+  height: 67dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+
+.box {
+  border: 1px var(--mantine-color-default-border) solid;
+  width: var(--box-size);
+  height: var(--box-size);
+}
