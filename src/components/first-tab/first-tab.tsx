@@ -4,8 +4,7 @@ import { Box, Button, Flex, Grid, Textarea } from "@mantine/core";
 import { WordStatItem } from "@/types";
 import { sortWords } from "@/utils";
 
-import { WordsTable } from "../words-table";
-
+import { WordsTable } from "./words-table";
 import classes from "./first-tab.module.css";
 
 export const FirstTab = () => {
