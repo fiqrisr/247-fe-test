@@ -63,8 +63,8 @@ export const SecondTab = () => {
         className={classes.panel}
         ref={(ref) => {
           if (ref) {
-            const panelWidth = ref.offsetWidth;
-            const panelHeight = ref.offsetHeight;
+            const panelWidth = ref.offsetWidth - 10;
+            const panelHeight = ref.offsetHeight - 10;
             const boxSize = calculateBoxSize(panelWidth, panelHeight, count);
             ref.style.setProperty("--box-size", `${boxSize}px`);
           }
